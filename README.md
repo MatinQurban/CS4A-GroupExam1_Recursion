@@ -16,7 +16,7 @@ Objective: Print one or all possible paths from the start to the destination.
 Problem Statement: Given an array of integers and a target sum, find all unique combinations where the numbers add up to the target. A number can be used multiple times.
 Objective: Return a list of all possible combinations that sum up to the target.
 
-**To Run the Program, run the following commands in order**:
+**To Run the Program, after cloning this repo, run the following commands in the terminal/ command prompt**:
 
 `javac Main.java`
 
