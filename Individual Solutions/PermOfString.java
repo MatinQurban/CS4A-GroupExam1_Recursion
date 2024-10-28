@@ -1,7 +1,8 @@
 import java.util.ArrayList;
 
-public class SolutionOne {
-    public static void main(String[] args) {
+
+public class PermOfString {
+    public static void run(String[] args) {
         String test1 = "cat";
         ArrayList<String> result1 = PermutationOfAString(test1);
         PrintList(result1);

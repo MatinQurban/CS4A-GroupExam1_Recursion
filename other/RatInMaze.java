@@ -1,3 +1,4 @@
+package other;
 /*
  * Rat In Maze Documentation (CS4A - Fall 2024)
 

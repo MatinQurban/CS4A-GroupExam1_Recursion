@@ -19,9 +19,8 @@
  *  pass in (0, 1) because I would not change the row, but I would increment the column by 1).
   */
 
-  public class wordSearchPuzzle
+  public class WordSearchPuzzle
   {
-
     public static void main(String[] args)
     {
       //Create a board to test with, find one on google/online
