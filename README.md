@@ -1,13 +1,5 @@
 # CS4A-GroupExam1_Recursion
-Solve 5 Recursion Problems in Java
 
-Instructions
-For each of these recursive backtracking problems, the following details should be submitted:
-High-Level Description: An explanation of how recursive backtracking will be used to solve the problem.
-Model: A description of the state that is passed between recursive calls.
-Java Source Code: The implementation that solves the problem using recursive backtracking.
-Testing Program: A Java program that tests the solver.
-Inputs and Outputs: Example inputs to the solver and the expected output.
 1. Permutations of a String
 Problem Statement: Given a string, find all the possible permutations of its characters.
 Objective: Generate all permutations of the string and return them in a list.
@@ -24,3 +16,6 @@ Objective: Print one or all possible paths from the start to the destination.
 Problem Statement: Given an array of integers and a target sum, find all unique combinations where the numbers add up to the target. A number can be used multiple times.
 Objective: Return a list of all possible combinations that sum up to the target.
 
+**To Run the Program, run the following commands**:
+`javac Main.java`
+`java Main`
