@@ -1,28 +1,35 @@
-import java.util.ArrayList;
+// import java.util.ArrayList;
+
+import java.util.HashSet;
+import java.util.Set;
 
 
 public class PermOfString {
-    public static void run(String[] args) {
-        String test1 = "cat";
-        ArrayList<String> result1 = PermutationOfAString(test1);
-        PrintList(result1);
-        System.out.println();
+    public static void main(String[] args) {
+        // String test1 = "cat";
+        // ArrayList<String> result1 = PermutationOfAString(test1);
+        // PrintList(result1);
+        // System.out.println();
 
-        String test2 = "word";
-        ArrayList<String> result2 = PermutationOfAString(test2);
-        PrintList(result2);
-        System.out.println();
+        // String test2 = "word";
+        // ArrayList<String> result2 = PermutationOfAString(test2);
+        // PrintList(result2);
+        // System.out.println();
 
-        String test3 = "012";
-        ArrayList<String> result3 = PermutationOfAString(test3);
-        PrintList(result3);
+        // String test3 = "012";
+        // ArrayList<String> result3 = PermutationOfAString(test3);
+        // PrintList(result3);
+        // System.out.println();
+        String test4 = "wordd";
+        Set<String> result4 = PermutationOfAString(test4);
+        PrintList(result4);
         System.out.println();
 
 
     } // end main
 
-    public static ArrayList<String> PermutationOfAString(String str) {
-        ArrayList<String> list = new ArrayList<>();
+    public static Set<String> PermutationOfAString(String str) {
+        Set<String> list = new HashSet<>();
         char[] arr = str.toCharArray();
 
         System.out.println("Permutations of " + str + ": ");
@@ -31,10 +38,12 @@ public class PermOfString {
         return list;
     } // END PermutationOfAString
 
-    public static void Perm(char[] arr, ArrayList<String> list, int index) {
+    public static void Perm(char[] arr, Set<String> list, int index) {
 
-        if(index == arr.length) {
-            list.add(String.valueOf(arr));
+        String element = String.valueOf(arr);
+
+        if(index == arr.length &&  list.contains(element) == false) {
+            list.add(element);
         }
 
         for (int i = index; i < arr.length; i++) {
@@ -53,9 +62,12 @@ public class PermOfString {
         arr[index2] = temp;
     } // END Swap
 
-    public static void PrintList(ArrayList<String> list) {
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
+    public static void PrintList(Set<String> list) {
+        int i = 1;
+        for (String element: list)
+        {
+            System.out.println(i + ". " + element);
+            i++;
         }
     } // END PrintList
 
