@@ -63,7 +63,6 @@ public class Main {
             
         } while (choice != 0);
     }   // end of main()
-
 }
 
 
@@ -92,7 +91,7 @@ class PermOfString {
         Set<String> list = new HashSet<>();
         char[] arr = str.toCharArray();
 
-        System.out.println("Permutations of " + str + ": ");
+        System.out.println("Permutations of '" + str + "': ");
         Perm(arr, list, 0);
 
         return list;
