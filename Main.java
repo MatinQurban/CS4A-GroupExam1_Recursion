@@ -1,10 +1,10 @@
 // Dependency for Main
 import java.util.Scanner;
 
-// Dependency for Solution 1, 4, & 5
+// Dependency for Solutions 4 and 5
 import java.util.ArrayList;
 
-// Dependencies for Solution 2
+// Dependencies for Solutions 1 and 2
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
