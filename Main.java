@@ -212,6 +212,7 @@ class Sudoku{
     private static boolean solveSudokuHelper(int row, int col, int[][] board, HashMap<Integer, Set<Integer>> grids) {
         int nextRow;
         int nextCol;
+        int grid;
         
         if (row == board.length) {
             return true;  // Sudoku has been solved
@@ -227,7 +228,7 @@ class Sudoku{
             return solveSudokuHelper(nextRow, nextCol, board, grids);  // Skip pre-filled cells
         }
 
-        int grid = determineGrid(row, col);
+        grid = determineGrid(row, col);
 
         for (int num = 1; num <= 9; num++) {
             if (isValid(board, grids, row, col, num)) {
