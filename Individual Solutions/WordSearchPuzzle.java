@@ -35,9 +35,14 @@
       String findStr2 = "SEEDS";  //Vertical Check
       String findStr3 = "BUG";    //False check
 
-      boolean wordInBoard = wordSearch(board, findStr2);
-
+      boolean wordInBoard = wordSearch(board, findStr1);
+      System.out.println("Word "+findStr1+" is in the board? " +wordInBoard);
+      
+      wordInBoard = wordSearch(board, findStr2);
       System.out.println("Word "+findStr2+" is in the board? " +wordInBoard);
+      
+      wordInBoard = wordSearch(board, findStr3);
+      System.out.println("Word "+findStr3+" is in the board? " +wordInBoard);
     }
 
     public static boolean wordSearch(char[][] board, String word)
