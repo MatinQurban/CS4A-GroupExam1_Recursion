@@ -465,8 +465,8 @@ class RatInMaze {
         // Define the maze: 1 is an open cell, 0 is a blocked cell
         int[][] maze = {
             {1, 0, 0, 0},
-            {1, 1, 1, 1},
-            {0, 1, 0, 1},
+            {1, 1, 0, 1},
+            {0, 1, 0, 0},
             {0, 1, 1, 1}
         };
         
